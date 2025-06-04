@@ -12,6 +12,7 @@
     --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-emerald-900: oklch(37.8% 0.077 168.94);
     --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-white: #fff;
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
@@ -20,6 +21,7 @@
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-bold: 700;
+    --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -173,6 +175,9 @@
   }
 }
 @layer utilities {
+  .float-right {
+    float: right;
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
@@ -182,11 +187,23 @@
   .table {
     display: table;
   }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
+  .h-1\/2 {
+    height: calc(1/2 * 100%);
+  }
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
   .h-32 {
     height: calc(var(--spacing) * 32);
+  }
+  .h-\[150px\] {
+    height: 150px;
+  }
+  .h-\[250px\] {
+    height: 250px;
   }
   .h-full {
     height: 100%;
@@ -206,8 +223,14 @@
   .w-\[50\%\] {
     width: 50%;
   }
+  .w-\[80\%\] {
+    width: 80%;
+  }
   .w-\[150px\] {
     width: 150px;
+  }
+  .w-\[250px\] {
+    width: 250px;
   }
   .w-full {
     width: 100%;
@@ -251,6 +274,9 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
   .rounded-b-2xl {
     border-bottom-right-radius: var(--radius-2xl);
     border-bottom-left-radius: var(--radius-2xl);
@@ -259,8 +285,15 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-8 {
+    border-style: var(--tw-border-style);
+    border-width: 8px;
+  }
   .border-amber-100 {
     border-color: var(--color-amber-100);
+  }
+  .border-white {
+    border-color: var(--color-white);
   }
   .bg-emerald-900 {
     background-color: var(--color-emerald-900);
@@ -291,6 +324,9 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .py-7 {
+    padding-block: calc(var(--spacing) * 7);
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
