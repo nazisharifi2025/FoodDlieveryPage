@@ -278,8 +278,20 @@
   .w-\[220px\] {
     width: 220px;
   }
+  .w-\[230px\] {
+    width: 230px;
+  }
   .w-\[250px\] {
     width: 250px;
+  }
+  .w-\[340px\] {
+    width: 340px;
+  }
+  .w-\[400px\] {
+    width: 400px;
+  }
+  .w-\[430px\] {
+    width: 430px;
   }
   .w-full {
     width: 100%;
@@ -344,6 +356,9 @@
   .overflow-y-scroll {
     overflow-y: scroll;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -389,6 +404,12 @@
   }
   .bg-cover {
     background-size: cover;
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
   }
   .p-12 {
     padding: calc(var(--spacing) * 12);
