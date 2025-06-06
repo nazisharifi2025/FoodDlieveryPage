@@ -27,6 +27,7 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -272,6 +273,9 @@
   .h-\[70vh\] {
     height: 70vh;
   }
+  .h-\[80\%\] {
+    height: 80%;
+  }
   .h-\[80vh\] {
     height: 80vh;
   }
@@ -280,6 +284,9 @@
   }
   .h-\[130px\] {
     height: 130px;
+  }
+  .h-\[140px\] {
+    height: 140px;
   }
   .h-\[150px\] {
     height: 150px;
@@ -319,6 +326,9 @@
   }
   .w-\[130px\] {
     width: 130px;
+  }
+  .w-\[140px\] {
+    width: 140px;
   }
   .w-\[150px\] {
     width: 150px;
@@ -406,6 +416,9 @@
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
