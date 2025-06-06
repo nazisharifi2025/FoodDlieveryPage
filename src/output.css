@@ -181,8 +181,14 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
+  }
+  .static {
+    position: static;
   }
   .-top-10 {
     top: calc(var(--spacing) * -10);
@@ -627,6 +633,16 @@
   .lg\:right-0 {
     @media (width >= 64rem) {
       right: calc(var(--spacing) * 0);
+    }
+  }
+  .dark\:bg-greenC {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-greenC);
+    }
+  }
+  .dark\:text-amber-100 {
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-amber-100);
     }
   }
 }
