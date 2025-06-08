@@ -58,6 +58,10 @@ mode.addEventListener("click", () => {
     nave.classList.remove("bg-greenC");
     nave.classList.add("shadow-greenC");
     nave.classList.remove("shadow-amber-100");
+    divs.forEach((item) => {
+      item.classList.remove("bg-amber-100");
+      item.classList.add("bg-greenC");
+    });
   } else {
     body.classList.add("bg-greenC");
     body.classList.add("text-amber-100");
