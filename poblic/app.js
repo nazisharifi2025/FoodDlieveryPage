@@ -13,7 +13,7 @@ const serves3 = document.getElementById("serves3");
 const nave = document.getElementById("nave");
 // const dark = document.querySelector("button.bg-amber-100");
 mode.addEventListener("click", () => {
-  const divs = document.querySelectorAll(".bg-amber-100");
+  const divs = document.querySelectorAll(".change");
   if (body.classList.contains("bg-greenC")) {
     body.classList.remove("bg-greenC");
     body.classList.remove("text-amber-100");
@@ -61,6 +61,8 @@ mode.addEventListener("click", () => {
     divs.forEach((item) => {
       item.classList.remove("bg-amber-100");
       item.classList.add("bg-greenC");
+      item.classList.remove("text-greenC");
+      item.classList.add("text-amber-100");
     });
   } else {
     body.classList.add("bg-greenC");
@@ -106,6 +108,12 @@ mode.addEventListener("click", () => {
     nav.classList.remove("text-greenC");
     nave.classList.remove("shadow-greenC");
     nave.classList.add("shadow-amber-100");
+    divs.forEach((item) => {
+      item.classList.add("bg-amber-100");
+      item.classList.remove("bg-greenC");
+      item.classList.add("text-greenC");
+      item.classList.remove("text-amber-100");
+    });
   }
 });
 
