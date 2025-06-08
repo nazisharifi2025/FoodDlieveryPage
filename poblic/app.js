@@ -13,7 +13,7 @@ const serves3 = document.getElementById("serves3");
 const nave = document.getElementById("nave");
 // const dark = document.querySelector("button.bg-amber-100");
 mode.addEventListener("click", () => {
-  console.log("hi");
+  const divs = document.querySelectorAll(".bg-amber-100");
   if (body.classList.contains("bg-greenC")) {
     body.classList.remove("bg-greenC");
     body.classList.remove("text-amber-100");

@@ -9,10 +9,12 @@
       "Courier New", monospace;
     --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-amber-600: oklch(66.6% 0.179 58.318);
+    --color-green-950: oklch(26.6% 0.065 152.934);
     --color-emerald-900: oklch(37.8% 0.077 168.94);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-black: #000;
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
@@ -257,8 +259,20 @@
   .h-\[40vh\] {
     height: 40vh;
   }
+  .h-\[60\%\] {
+    height: 60%;
+  }
   .h-\[60vh\] {
     height: 60vh;
+  }
+  .h-\[70\%\] {
+    height: 70%;
+  }
+  .h-\[70vh\] {
+    height: 70vh;
+  }
+  .h-\[80\%\] {
+    height: 80%;
   }
   .h-\[80vh\] {
     height: 80vh;
@@ -304,6 +318,9 @@
   }
   .w-\[80\%\] {
     width: 80%;
+  }
+  .w-\[100\%\] {
+    width: 100%;
   }
   .w-\[130px\] {
     width: 130px;
@@ -370,6 +387,9 @@
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
   }
   .space-x-1 {
     :where(& > :not(:last-child)) {
@@ -448,6 +468,9 @@
   .bg-emerald-900 {
     background-color: var(--color-emerald-900);
   }
+  .bg-green-950 {
+    background-color: var(--color-green-950);
+  }
   .bg-greenC {
     background-color: var(--color-greenC);
   }
@@ -475,6 +498,9 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
+  .p-7 {
+    padding: calc(var(--spacing) * 7);
+  }
   .p-12 {
     padding: calc(var(--spacing) * 12);
   }
@@ -492,6 +518,9 @@
   }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
   }
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
@@ -638,6 +667,20 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-amber-100);
+      }
+    }
+  }
+  .hover\:bg-bgcon {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-bgcon);
+      }
+    }
+  }
+  .hover\:bg-black {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-black);
       }
     }
   }
