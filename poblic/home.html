@@ -25,15 +25,10 @@
   </head>
   <!-- https://demo.awaikenthemes.com/lenity/ -->
   <body class="font-kalam h-screen w-full text-amber-100 relative  overflow-y-scroll bg-greenC"  id="body">
-    <!-- mod strt -->
-     <button id="mode" class="bg-amber-100 p-4 rounded-md rounded-r-none  top-24 right-0 text-greenC fixed">
-      <span   class="material-symbols-outlined" style="font-size: 35px;" >
-contrast
-</span>
-     </button>
-     <!-- mod end -->
+   
     <!-- navar start -->
     <div
+    id="nav"
       class="h-20 lite bg-greenC font-bold flex shadow-md justify-evenly text-amber-100 list-none text-[19px] items-center"
     >
       <li>
@@ -43,9 +38,10 @@ contrast
         <a href="#" class="hover:border-b-2 hover:border-amber-100">درباره ما</a>
       </li>
       <div
+      id="nave"
         class="bg-greenC shadow-md shadow-amber-100 mt-5 flex justify-center items-center rounded-b-2xl h-32 w-[150px]"
       >
-        <div class="py-8 px-2 rounded-b-2xl border border-amber-100">
+        <div class="py-8 px-2 rounded-b-2xl ">
           <img src="../poblic/img/logo.svg" alt="" />
         </div>
       </div>
@@ -87,7 +83,7 @@ contrast
     </div>
     <!-- slider end -->
     <!-- about start -->
-    <div class="h-screen w-full lite flex justify-between items-center py-7">
+    <div  class="h-screen w-full lite flex justify-between items-center py-7">
       <div class="h-full w-[45%] relative p-12 scroll-animate ">
         <img
           src="../poblic/img/about-img-1.jpg"
@@ -96,11 +92,13 @@ contrast
         />
         <div class="flex w-full h-1/2 absolute top-72">
           <img
+          id="img"
             src="../poblic/img/about-img-2.jpg"
             class="w-[250px] border-8 border-greenC scroll-animate h-[250px] rounded-xl"
             alt=""
           />
           <div
+          id="div1"
             class="font-bold rounded-md mt-28 m-8 text-center flex flex-col outline-8 outline-greenC justify-center items-center h-[130px] w-[130px] bg-amber-100 text-greenC"
           >
             <span class="material-symbols-outlined" style="font-size: 35px">
@@ -111,7 +109,7 @@ contrast
         </div>
       </div>
       <!-- div1 end -->
-      <div class="w-[45%] h-full flex flex-col gap-4 scroll-animate py-12  text-amber-100">
+      <div id="text" class="w-[45%] h-full flex flex-col gap-4 scroll-animate py-12  text-amber-100">
         <div class="flex space-x-2">
           <span class="material-symbols-outlined text-amber-600">
             diversity_4
@@ -147,7 +145,8 @@ contrast
           </div>
           <!-- end -->
           <div
-            class="bg-amber-100 h-[40vh] -z-0 pt-24 flex items-center flex-col justify-center relative rounded-md w-[220px]"
+          id="div2"
+            class="bg-amber-100 h-[40vh]  -z-0 pt-24 flex items-center flex-col justify-center relative rounded-md w-[220px]"
             style="
               clip-path: polygon(
                 0% 15%,
@@ -165,7 +164,7 @@ contrast
               );
             "
           >
-            <h1 class="text-greenC text-xl text-center">75,958</h1>
+            <h1 class="text-gray-600 text-xl text-center">75,958</h1>
             <h2 class="font-bold text-gray-500">Helped Fund</h2>
             <p class="text-center text-gray-300">
               حمایت از توسعه با مشارکت مالی جامعه (رسمی و انسانی)
@@ -182,6 +181,7 @@ contrast
     <!-- about end -->
     <!-- serves start -->
     <div
+    id="serves"
       class="h-screen w-full text-amber-100 flex justify-center flex-col gap-6 items-center"
     >
       <h3 class="text-xl flex justify-center  scroll-animate items-center space-x-1.5">
@@ -199,7 +199,8 @@ contrast
       >
       <div class="h-[90vh] w-full flex justify-evenly  scroll-animate items-center">
         <div
-          class="bg-amber-100 text-greenC gap-6  scroll-animate rounded-2xl h-full w-[340px] flex flex-col justify-center items-center"
+        id="serves1"
+          class="bg-amber-100 chinge text-greenC gap-6  scroll-animate rounded-2xl h-full w-[340px] flex flex-col justify-center items-center"
         >
           <strong class="text-xl text-center font-bold  scroll-animate"
             >دسترسی به مراقبت‌های بهداشتی</strong
@@ -223,7 +224,8 @@ contrast
           </button>
         </div>
         <div
-          class="bg-amber-100 text-greenC  scroll-animate gap-6 py-4 rounded-2xl h-full w-[340px] flex flex-col justify-center items-center"
+        id="serves2"
+          class="bg-amber-100 text-greenC chinge scroll-animate gap-6 py-4 rounded-2xl h-full w-[340px] flex flex-col justify-center items-center"
         >
           <strong class="text-xl text-center font-bold"
             >برنامه‌های تأمین امنیت غذایی</strong
@@ -247,7 +249,8 @@ contrast
           </button>
         </div>
         <div
-          class="bg-amber-100 text-greenC gap-6  scroll-animate rounded-2xl h-full w-[340px] flex flex-col justify-center items-center"
+        id="serves3"
+          class="bg-amber-100 text-greenC gap-6 chinge  scroll-animate rounded-2xl h-full w-[340px] flex flex-col justify-center items-center"
         >
           <strong class="text-xl text-center font-bold"
             >کمک‌های آموزشی</strong
@@ -328,11 +331,20 @@ cottage
         </div>
       </div>
       <!-- div1 end -->
-       <div class="h-full w-1/2 flex justify-center items-center relative">
-        <img src="../poblic/img/what-we-do-image-1.jpg" class="h-full rounded-3xl w-[70%]" alt="">
-        <img src="../poblic/img/what-we-do-image-2.jpg" class="h-[200px] w-[200px] border-8 border-greenC rounded-full absolute bottom-28 left-0" alt="">
+       <div class="h-full w-1/2 flex justify-center items-center relative scroll-animate">
+        <img src="../poblic/img/what-we-do-image-1.jpg" class="h-full scroll-animate rounded-3xl w-[70%]" alt="">
+        <img src="../poblic/img/what-we-do-image-2.jpg" id="img2" class="h-[200px] scroll-animate w-[200px] border-8 border-greenC rounded-full absolute bottom-28 left-0" alt="">
        </div>
      </div>
     <!-- WETH WE DO END-->
+     <!--  -->
+     <!--  -->
+      <!-- mod strt -->
+     <button id="mode" class="bg-amber-100 p-4 rounded-md rounded-r-none  top-24 right-0 text-greenC fixed">
+      <span   class="material-symbols-outlined" style="font-size: 35px;" >
+contrast
+</span>
+     </button>
+     <!-- mod end -->
   </body>
 </html>

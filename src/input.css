@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import url(../fonts/kalam/Kalam-Regular.ttf);
 @theme {
-  --color-bgcon: rgba(255, 255, 255, 0.3);
+  --color-bgcon: rgba(0, 81, 72, 0.9);
   --color-bgfi: rgba(255, 255, 255, 0.1);
   --color-naz: rgba(255, 255, 255, 0.5);
   --color-coffe: rgba(255, 255, 255, 0.9);
