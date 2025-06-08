@@ -150,38 +150,3 @@ setInterval(() => {
     h1.textContent = "";
   }
 }, 200);
-
-// counter
-const counters = document.querySelectorAll(".text-3xl");
-function countUp(el, target) {
-  let current = 0;
-  const incerment = target / 100;
-
-  const updateCount = () => {
-    current += incerment;
-    if (current < target) {
-      el.textContent = Math.ceil(current);
-      requestAnimationFrame(updateCount);
-    } else {
-      el.textContent = target;
-    }
-  };
-  updateCount();
-}
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const target = +el.getAttribute("data-target");
-        countUp(el, target);
-        observer.unobserve(el);
-      }
-    });
-  },
-  {
-    threshold: 0.6,
-  }
-);
-counters.forEach((counter) => observer.observe(counter));

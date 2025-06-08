@@ -370,13 +370,13 @@ cottage
       </div>
      <!-- OUR CAUSES end -->
      <!-- WHY CHOOSE US start -->
-      <div class="h-screen w-full flex justify-between items-center">
-        <div class="h-full w-1/2 flex justify-center p-18 items-center relative">
+      <div class="h-screen w-full flex scroll-animate justify-between items-center">
+        <div class="h-full w-1/2 flex scroll-animate justify-center p-18 items-center relative">
           <img src="../poblic/img/img2.jpg" class="h-full w-full rounded-full" alt="">
           <img src="../poblic/img/why-choose-img-2.jpg" class="h-[230px] absolute bottom-12 right-0 border-2 border-greenC w-[230px] rounded-full" alt="">
 
         </div>
-        <div class="h-full w-1/2 flex flex-col gap-4 p-16 " dir="rtl">
+        <div class="h-full w-1/2 flex flex-col scroll-animate gap-4 p-16 " dir="rtl">
           <h1 class="font-bold text-xl">
             <span class="material-symbols-outlined text-amber-700" style="font-size: 30px;">
 volunteer_activism
@@ -412,17 +412,17 @@ volunteer_activism
           <p class="font-bold  text-xl">جذب و مشارکت داوطلبان و اهداکنندگان</p>
         </div>
        </div>
-       <div class="flex justify-evenly ">
+       <div class="flex justify-evenly scroll-animate">
         <div class="flex justify-center flex-col items-center w-[200px] border-r h-[140px]">
-            <h1 data-target="25" class="font-bold text-4xl font-serif">0</h1>
+            <h1 data-target="25" class="font-bold text-4xl count font-serif">0</h1>
         <h2 class="text-[20px]">سال‌ها سابقه کار</h2>
         </div>
-        <div class="flex justify-center flex-col items-center w-[200px] border-r h-[140px]">
-            <h1 data-target="230" class="font-bold text-4xl font-serif">0</h1>
+        <div class="flex justify-center flex-col items-center  w-[200px] border-r h-[140px]">
+            <h1 data-target="230" class="font-bold text-4xl count font-serif">0</h1>
         <h2 class="text-[20px] text-center">با بیش از هزار داوطلب فعال</h2>
         </div>
         <div class="flex justify-center flex-col items-center w-[200px] border-r h-[140px]">
-            <h1 data-target="430" class="font-bold text-4xl font-serif">0</h1>
+            <h1 data-target="430" class="font-bold text-4xl count font-serif">0</h1>
         <h2 class="text-[20px]">دفاتر در سراسر جهان</h2>
         </div>
        </div>
@@ -430,6 +430,18 @@ volunteer_activism
 
       </div>
      <!-- WHY CHOOSE US end -->
+      <!-- OUR FEATURE start -->
+       <div dir="rtl" class="h-screen w-full   flex flex-col justify-center items-center">
+         <h1 class="font-bold text-xl">
+            <span class="material-symbols-outlined text-amber-700" style="font-size: 30px;">
+volunteer_activism
+</span>
+ویژگی‌های ما یا قابلیت‌های ما
+          </h1>
+          <h1 class="font-extrabold text-2xl">نشان‌دهندهٔ کارهای اثرگذار ماست</h1>
+          <p class="text-xl font-bold w-[60%] text-center">با دستاوردهای مثبت ما آشنا شوید؛ حاصل برنامه‌ها، همکاری‌ها و تلاش‌های پیگیرانه‌ ما. از سلامت و آموزش تا پایداری محیط‌ زیست، در مسیر ساختن آینده‌ای بهتر گام برداشته‌ایم.</p>
+       </div>
+      <!-- OUR FEATURE end -->
       <!-- mod strt -->
      <button id="mode" class="bg-amber-100 p-4 rounded-md rounded-r-none  top-24 right-0 text-greenC fixed">
       <span   class="material-symbols-outlined" style="font-size: 35px;" >
@@ -437,5 +449,46 @@ contrast
 </span>
      </button>
      <!-- mod end -->
+      <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll(".count");
+
+    function countUp(el, target) {
+      let current = 0;
+      const increment = target / 100;
+
+      const updateCount = () => {
+        current += increment;
+        if (current < target) {
+          el.textContent = Math.ceil(current);
+          requestAnimationFrame(updateCount);
+        } else {
+          el.textContent = target;
+        }
+      };
+
+      updateCount();
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = +el.getAttribute("data-target");
+            countUp(el, target);
+            observer.unobserve(el);
+          }
+        });
+      },
+      {
+        threshold: 0.6,
+      }
+    );
+
+    counters.forEach((counter) => observer.observe(counter));
+  });
+</script>
+
   </body>
 </html>
