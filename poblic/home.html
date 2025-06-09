@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+     <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css" />
     <style>
        .scroll-animate {
     opacity: 0;
@@ -23,14 +24,38 @@
     </style>
     <script src="app.js" defer></script>
   </head>
+    <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
   <!-- https://demo.awaikenthemes.com/lenity/ -->
   <body class="font-kalam h-screen w-full text-amber-100 relative  overflow-y-scroll bg-greenC"  id="body">
    
     <!-- navar start -->
-    <div
+     <!-- nav md start -->
+       <div
     id="nav"
-      class="h-20 lite bg-greenC font-bold flex shadow-md justify-evenly text-amber-100 list-none text-[19px] items-center"
+      class="h-16 lg:hidden lite bg-greenC z-50  font-bold absolute w-full flex pb-3  shadow-md justify-between text-amber-100 list-none text-[19px]  items-end px-7"
     >
+    <div
+      id="nave"
+        class="bg-greenC  shadow-md shadow-amber-100 flex py-24 justify-center rounded-b-2xl h-32 w-[120px]"
+      >
+        <div class="pt-12 px-2 rounded-b-2xl ">
+          <img src="../poblic/img/logo.svg" alt="" />
+        </div>
+      </div>
+        <span id="menu" class="material-symbols-outlined p-2 rounded-2xl bg-amber-600" style="font-size: 35px; " >
+menu
+</span>
+    </div>
+     <!-- nav md end -->
+    <div
+    id="navbar"
+      class="lg:h-20 h-screen lite bg-greenC z-50 overflow-y-hidden fixed -left-[100%] lg:left-0 font-bold  w-full flex lg:flex-row flex-col  shadow-md justify-evenly text-amber-100 list-none text-[19px] lg:items-center items-end px-7"
+    >
+    <button class="w-full border-b md:block lg:hidden p-1 items-start flex md:justify-end">
+       <span class="material-symbols-outlined p-2 rounded-2xl bg-amber-600  float-right" id="close" style="font-size: 35px;" >
+close
+</span>
+</button>
       <li>
         <a href="#" class="hover:border-b-2 hover:border-amber-100">خانه</a>
       </li>
@@ -39,7 +64,7 @@
       </li>
       <div
       id="nave"
-        class="bg-greenC shadow-md shadow-amber-100 mt-5 flex justify-center items-center rounded-b-2xl h-32 w-[150px]"
+        class="bg-greenC hidden lg:block shadow-md shadow-amber-100 mt-5 flex justify-center items-center rounded-b-2xl h-32 w-[150px]"
       >
         <div class="py-8 px-2 rounded-b-2xl ">
           <img src="../poblic/img/logo.svg" alt="" />
@@ -51,12 +76,14 @@
       <li>
         <a href="#" class="hover:border-b-2 hover:border-amber-100">وبلاگ</a>
       </li>
+    
+   
     </div>
     <!-- nav ended -->
     <!-- slider start -->
     <div
     dir="rtl"
-      class="h-screen w-full bg-[url(../poblic/img/faqs-image.jpg)] bg-cover"
+      class="lg:h-screen h-[40vh] w-full py-64 lg:my-0 bg-[url(../poblic/img/faqs-image.jpg)] bg-cover"
     >
       <div
         class="text-xl text-amber-100 scroll-animate flex flex-col gap-4 justify-center items-start px-7 h-full"
@@ -64,11 +91,11 @@
         <div>
           <span>به خیریه ما خوش آمدید</span>
         </div>
-        <h1 class="text-5xl font-bold w-[45%]">
+        <h1 class="text-5xl font-bold lg:w-[45%] w-full">
        با هر نشانه‌ای از
       </span>    مهربانی، به تغییر قدرت     <span class="text-emerald-900">ببخشیم.
         </h1>
-        <p class="w-[50%] scroll-animate">
+        <p class="lg:w-[50%] w-[80%] scroll-animate">
           به ما بپیوندید تا با بخشیدن امید، رساندن یاری و ایجاد تغییری پایدار، آینده‌ای روشن‌تر برای جوامع نیازمند در سراسر جهان بسازیم.
         </p>
         <button
@@ -83,18 +110,18 @@
     </div>
     <!-- slider end -->
     <!-- about start -->
-    <div  class="h-screen w-full lite flex justify-between items-center py-7">
-      <div class="h-full w-[45%] relative p-12 scroll-animate ">
+    <div  class="lg:h-[130vh] h-fit w-full lite flex lg:flex-row flex-col justify-between items-center py-7">
+      <div class="lg:h-full h-[140vh] lg:w-[45%] w-[90%]  relative p-12 scroll-animate ">
         <img
           src="../poblic/img/about-img-1.jpg"
-          class="rounded-xl scroll-animate w-[80%] float-right"
+          class="rounded-xl scroll-animate lg:w-[80%] w-[] float-right"
           alt=""
         />
         <div class="flex w-full h-1/2 absolute top-72">
           <img
           id="img"
             src="../poblic/img/about-img-2.jpg"
-            class="w-[250px] border-8 border-greenC scroll-animate h-[250px] rounded-xl"
+            class="lg:w-[250px] border-8 border-greenC scroll-animate h-[250px] rounded-xl"
             alt=""
           />
           <div
@@ -109,7 +136,7 @@
         </div>
       </div>
       <!-- div1 end -->
-      <div id="text" class="w-[45%] h-full flex flex-col gap-4 scroll-animate py-12  text-amber-100">
+      <div id="text" class="lg:w-[45%] w-[90%] lg:h-full h-[150vh] flex flex-col gap-4 scroll-animate py-12  text-amber-100">
         <div class="flex space-x-2">
           <span class="material-symbols-outlined text-amber-600">
             diversity_4
@@ -182,7 +209,7 @@
     <!-- serves start -->
     <div
     id="serves"
-      class="h-screen w-full text-amber-100 flex justify-center flex-col gap-6 items-center"
+      class="lg:h-screen h-fit w-full text-amber-100 flex justify-center flex-col gap-6 items-center"
     >
       <h3 class="text-xl flex justify-center  scroll-animate items-center space-x-1.5">
         <span
@@ -197,10 +224,10 @@
       <span class="w-[60%] text-center text-xl  scroll-animate"
         >خدمات ما بر ایجاد تغییرات پایدار از طریق توسعه جامعه، دسترسی به خدمات بهداشتی، حمایت آموزشی و کمک‌های اضطراری متمرکز است.</span
       >
-      <div class="h-[90vh] w-full flex justify-evenly  scroll-animate items-center">
+      <div class="lg:h-[90vh] h-[170vh] w-full flex gap-3 justify-evenly lg:flex-nowrap flex-wrap scroll-animate items-center">
         <div
         id="serves1"
-          class="bg-amber-100 chinge text-greenC gap-6  scroll-animate rounded-2xl h-full w-[340px] flex flex-col justify-center items-center"
+          class="bg-amber-100 chinge text-greenC gap-6  scroll-animate rounded-2xl lg:h-[70vh] h-[90vh] w-[340px] flex flex-col justify-center items-center"
         >
           <strong class="text-xl text-center font-bold  scroll-animate"
             >دسترسی به مراقبت‌های بهداشتی</strong
@@ -225,7 +252,7 @@
         </div>
         <div
         id="serves2"
-          class="bg-amber-100 text-greenC chinge scroll-animate gap-6 py-4 rounded-2xl h-full w-[340px] flex flex-col justify-center items-center"
+          class="bg-amber-100 text-greenC chinge scroll-animate gap-6 py-4 rounded-2xl h-[70vh] w-[340px] flex flex-col justify-center items-center"
         >
           <strong class="text-xl text-center font-bold"
             >برنامه‌های تأمین امنیت غذایی</strong
@@ -250,7 +277,7 @@
         </div>
         <div
         id="serves3"
-          class="bg-amber-100 text-greenC gap-6 chinge  scroll-animate rounded-2xl h-full w-[340px] flex flex-col justify-center items-center"
+          class="bg-amber-100 text-greenC gap-6 chinge  scroll-animate rounded-2xl h-[70vh] w-[340px] flex flex-col justify-center items-center"
         >
           <strong class="text-xl text-center font-bold"
             >کمک‌های آموزشی</strong
@@ -283,8 +310,8 @@
     </div>
     <!-- serves end -->
     <!-- WETH WE DO START-->
-     <div class="h-screen w-full flex justify-between px-12 py-4 my-12 scroll-animate">
-      <div class="h-full w-1/2 flex flex-col gap-4 px-5">
+     <div class="lg:h-screen h-fit w-full flex lg:flex-row flex-col justify-between px-12 py-4 mt-36 scroll-animate">
+      <div class="lg:h-full h-screen lg:w-1/2 w-full flex flex-col gap-4 px-5">
         <div class="flex gap-3 items-center font-bold text-xl">
            <span class="material-symbols-outlined  text-amber-600" style="font-size: 35px">
               volunteer_activism
@@ -331,14 +358,14 @@ cottage
         </div>
       </div>
       <!-- div1 end -->
-       <div class="h-full w-1/2 flex justify-center items-center relative scroll-animate">
+       <div class="lg:h-full h-[130vh] my-11 lg:w-1/2 w-full flex justify-center items-center relative scroll-animate">
         <img src="../poblic/img/what-we-do-image-1.jpg" class="h-full scroll-animate rounded-3xl w-[70%]" alt="">
         <img src="../poblic/img/what-we-do-image-2.jpg" id="img2" class="h-[200px] scroll-animate w-[200px] border-8 border-greenC rounded-full absolute bottom-28 left-0" alt="">
        </div>
      </div>
     <!-- WETH WE DO END-->
      <!-- OUR CAUSES start -->
-      <div class="h-screen w-full flex justify-center scroll-animate items-center flex-col gap-8 ">
+      <div class="lg:h-screen h-fit w-full flex justify-center scroll-animate items-center flex-col gap-8 ">
         <p class="text-xl">
            <span class="material-symbols-outlined text-amber-600" style="font-size: 30px;">
             diversity_4
@@ -346,21 +373,21 @@ cottage
           اهداف ما
         </p>
         <h1 class="font-extrabold text-3xl">پشتیبانی از فعالیت‌های اجتماعی جوامع</h1>
-        <div class="h-[70vh] w-full flex justify-evenly items-center scroll-animate">
-          <div class="h-full w-[340px] bg-amber-100 change rounded-2xl flex gap-3 scroll-animate text-greenC flex-col justify-center items-center p-7">
-            <img src="../poblic/img/causes-img-1.jpg"  class="w-full h-[70%] rounded-2xl" alt="">
+        <div class="lg:h-[70vh] h-[150vh] w-full flex lg:flex-nowrap flex-wrap justify-evenly items-center scroll-animate">
+          <div class="h-[70vh] w-[340px] bg-amber-100 change rounded-2xl flex gap-3 scroll-animate text-greenC flex-col justify-center items-center py-3 p-7">
+            <img src="../poblic/img/causes-img-1.jpg"  class="w-full h-[120px] rounded-2xl" alt="">
             <p class="text-xl font-extrabold">دسترسی به خدمات درمانی</p>
             <p class="text-center font-bold">تضمین آموزش باکیفیت و منابع لازم برای جوامع محروم</p>
             <button class="bg-greenC text-amber-100 rounded-full py-2 scroll-animate px-8 hover:bg-black">هم‌اکنون اهدا کنید</button>
           </div>
-          <div class="h-full w-[340px] bg-amber-100 change rounded-2xl flex gap-3 scroll-animate text-greenC flex-col justify-center items-center p-7">
-            <img src="../poblic/img/causes-img-2.jpg" class="w-full h-[70%] rounded-2xl" alt="">
+          <div class="h-[70vh] w-[340px] bg-amber-100 change rounded-2xl flex gap-3 scroll-animate text-greenC flex-col justify-center items-center py-3 p-7">
+            <img src="../poblic/img/causes-img-2.jpg" class="w-full h-[120px] rounded-2xl" alt="">
             <p class="text-xl font-extrabold">حق آموزش برای همگان</p>
             <p class="text-center font-bold">تضمین آموزش باکیفیت و منابع لازم برای جوامع محروم</p>
             <button class="bg-greenC text-amber-100 rounded-full py-2 px-8 scroll-animate hover:bg-black">هم‌اکنون اهدا کنید</button>
           </div>
-          <div class="h-full w-[340px] bg-amber-100 change rounded-2xl flex gap-3 scroll-animate text-greenC flex-col justify-center items-center p-7">
-            <img src="../poblic/img/causes-img-3.jpg" class="w-full h-[70%] rounded-2xl" alt="">
+          <div class="h-[70vh] w-[340px] bg-amber-100 change rounded-2xl flex gap-3 scroll-animate text-greenC flex-col justify-center items-center py-3 p-7">
+            <img src="../poblic/img/causes-img-3.jpg" class="w-full h-[120px] rounded-2xl" alt="">
             <p class="text-xl font-extrabold">گرسنگی و امنیت غذایی</p>
             <p class="text-center font-bold">تضمین آموزش باکیفیت و منابع لازم برای جوامع محروم</p>
             <button class="bg-greenC text-amber-100 rounded-full py-2 px-8 scroll-animate hover:bg-black">هم‌اکنون اهدا کنید</button>
@@ -370,13 +397,13 @@ cottage
       </div>
      <!-- OUR CAUSES end -->
      <!-- WHY CHOOSE US start -->
-      <div class="h-screen w-full flex scroll-animate justify-between items-center">
-        <div class="h-full w-1/2 flex scroll-animate justify-center p-18 items-center relative">
+      <div class="lg:h-screen h-fit w-full flex lg:flex-row flex-col scroll-animate justify-between items-center">
+        <div class="lg:h-full h-[160vh] w-[80%] lg:w-1/2 flex scroll-animate justify-center p-18 items-center relative">
           <img src="../poblic/img/img2.jpg" class="h-full w-full rounded-full" alt="">
           <img src="../poblic/img/why-choose-img-2.jpg" class="h-[230px] absolute bottom-12 right-0 border-2 border-greenC w-[230px] rounded-full" alt="">
 
         </div>
-        <div class="h-full w-1/2 flex flex-col scroll-animate gap-4 p-16 " dir="rtl">
+        <div class="lg:h-full h-[100vh] w-full lg:justify-start justify-center lg:w-1/2 flex flex-col scroll-animate gap-4 p-16 " dir="rtl">
           <h1 class="font-bold text-xl">
             <span class="material-symbols-outlined text-amber-700" style="font-size: 30px;">
 volunteer_activism
@@ -431,7 +458,7 @@ volunteer_activism
       </div>
      <!-- WHY CHOOSE US end -->
       <!-- OUR FEATURE start -->
-       <div dir="rtl" class="h-[150vh] w-full scroll-animate gap-7 flex flex-col justify-center items-center">
+       <div dir="rtl" class="lg:h-[150vh] h-[340vh] w-full scroll-animate gap-7 flex flex-col justify-center items-center">
          <h1 class="font-bold text-xl">
             <span class="material-symbols-outlined text-amber-700" style="font-size: 30px;">
 volunteer_activism
@@ -440,7 +467,7 @@ volunteer_activism
           </h1>
           <h1 class="font-extrabold text-3xl">نشان‌دهندهٔ کارهای اثرگذار ماست</h1>
           <p class="text-xl font-bold w-[60%] text-center">با دستاوردهای مثبت ما آشنا شوید؛ حاصل برنامه‌ها، همکاری‌ها و تلاش‌های پیگیرانه‌ ما. از سلامت و آموزش تا پایداری محیط‌ زیست، در مسیر ساختن آینده‌ای بهتر گام برداشته‌ایم.</p>
-          <div class="w-full h-fit p-10 grid scroll-animate grid-cols-3 grid-rows-2">
+          <div class="w-full h-[210vh] p-10 lg:gap-0 gap-28 grid scroll-animate lg:grid-cols-3 grid-cols-2 grid-rows-3 lg:grid-rows-2">
             <img src="../poblic/img/our-features-img-1.jpg" class="h-[300px] scroll-animate w-[390px] rounded-3xl" alt="">
             <div class="h-[280px] w-[300px] flex flex-col justify-center ">
               <div class="w-full flex justify-between text-amber-600">
@@ -480,14 +507,14 @@ shopping_bag
        </div>
       <!-- OUR FEATURE end -->
        <!-- gallery start -->
-        <div class="h-screen w-full flex flex-col scroll-animate gap-3 justify-center items-center">
+        <div class="lg:h-screen h-[180vh] w-full flex flex-col scroll-animate gap-3 justify-center items-center">
           <h1 class="font-bold text-2xl scroll-animate">گالری 
                    <span class="material-symbols-outlined text-amber-700" style="font-size: 30px;">
 volunteer_activism
 </span>
           </h1>
           <h1 class="font-bold text-4xl scroll-animate">گالری از عکس های ما</h1>
-        <div class="h-[80%] w-[90%] grid scroll-animate grid-cols-5 grid-rows-2">
+        <div class="lg:h-[80%] h-[100vh] lg:w-[90%] w-full grid scroll-animate grid-cols-5 grid-rows-2">
           <img src="../poblic/img/gallery-1.jpg" class="h-[250px]  w-[250px]" alt="">
           <img src="../poblic/img/gallery-2.jpg" class="h-[250px] w-[250px]" alt="">
           <img src="../poblic/img/gallery-5.jpg" class="h-[250px] w-[250px]" alt="">
@@ -502,7 +529,7 @@ volunteer_activism
         </div>
        <!-- gallery end -->
         <!-- LATEST POST start -->
-         <div dir="rtl" class="h-screen w-full flex flex-col scroll-animate gap-3 justify-center items-center">
+         <div dir="rtl" class="lg:h-screen h-fit w-full flex flex-col scroll-animate gap-3 justify-center items-center">
           <h1 class="font-bold text-2xl scroll-animate">گالری 
                    <span class="material-symbols-outlined text-amber-700" style="font-size: 30px;">
 volunteer_activism
@@ -510,31 +537,31 @@ volunteer_activism
           </h1>
           <h1 class="font-bold text-4xl scroll-animate">داستان‌هایی از تأثیر و امید</h1>
           <p class="text-xl font-bold w-[50%] text-center">کشف داستان‌های الهام‌بخش و اخبار تازه از ابتکارات ما، موفقیت‌ها، و زندگی‌هایی که تحت تأثیر قرار گرفته‌اند. ببینید حمایت شما چگونه در حال ایجاد تغییراتی واقعی و ماندگار در جوامع سراسر جهان است.</p>
-          <div class="w-full flex justify-evenly">
-            <div class="h-[65vh] w-[340px] items-center text-greenC rounded-3xl border bg-amber-100  shadow-md shadow-amber-100 flex flex-col gap-4 justify-center p-5">
+          <div class="w-full flex lg:gap-0 gap-6 justify-evenly lg:flex-nowrap flex-wrap">
+            <div class="lg:h-[65vh] h-[80vh] w-[340px] items-center scroll-animate change text-greenC rounded-3xl border bg-amber-100  shadow-md shadow-amber-100 flex flex-col gap-4 justify-center p-5">
               <p class="text-amber-700 font-bold text-xl">January 8, 2025</p>
-              <p class="text-greenC font-bold text-2xl ">برنامه رهبری جوانان الهام‌بخش نسل آینده است</p>
-              <img src="../poblic/img/program-1.jpg" class="w-[90%] rounded-3xl" alt="">
+              <p class=" font-bold text-2xl ">برنامه رهبری جوانان الهام‌بخش نسل آینده است</p>
+              <img src="../poblic/img/post-img-1.jpg" class="w-[90%] rounded-3xl" alt="">
               <button class="">بیشتر بدانید 
                 <span class="material-symbols-outlined bg-amber-600 rounded-full p-2 " style="font-size: 15px">
             arrow_forward
           </span>
               </button>
             </div>
-            <div class="h-[65vh] w-[340px] items-center text-greenC rounded-3xl border bg-amber-100  shadow-md shadow-amber-100 flex flex-col gap-4 justify-center p-5">
+            <div class="lg:h-[65vh] h-[80vh] w-[340px] items-center scroll-animate change text-greenC rounded-3xl border bg-amber-100  shadow-md shadow-amber-100 flex flex-col gap-4 justify-center p-5">
               <p class="text-amber-700 font-bold text-xl">January 8, 2025</p>
-              <p class="text-greenC font-bold text-2xl ">برنامه رهبری جوانان الهام‌بخش نسل آینده است</p>
-              <img src="../poblic/img/program-1.jpg" class="w-[90%] rounded-3xl" alt="">
+              <p class=" font-bold text-2xl ">برنامه رهبری جوانان الهام‌بخش نسل آینده است</p>
+              <img src="../poblic/img/post-img-2.jpg" class="w-[90%] rounded-3xl" alt="">
               <button class="">بیشتر بدانید 
                 <span class="material-symbols-outlined bg-amber-600 rounded-full p-2 " style="font-size: 15px">
             arrow_forward
           </span>
               </button>
             </div>
-            <div class="h-[65vh] w-[340px] items-center text-greenC rounded-3xl border bg-amber-100  shadow-md shadow-amber-100 flex flex-col gap-4 justify-center p-5">
+            <div class="lg:h-[65vh] h-[80vh] w-[340px] items-center scroll-animate change text-greenC rounded-3xl border bg-amber-100  shadow-md shadow-amber-100 flex flex-col gap-4 justify-center p-5">
               <p class="text-amber-700 font-bold text-xl">January 8, 2025</p>
-              <p class="text-greenC font-bold text-2xl ">برنامه رهبری جوانان الهام‌بخش نسل آینده است</p>
-              <img src="../poblic/img/program-1.jpg" class="w-[90%] rounded-3xl" alt="">
+              <p class="font-bold text-2xl ">برنامه رهبری جوانان الهام‌بخش نسل آینده است</p>
+              <img src="../poblic/img/post-img-3.jpg" class="w-[90%] rounded-3xl" alt="">
               <button class="">بیشتر بدانید 
                 <span class="material-symbols-outlined bg-amber-600 rounded-full p-2 " style="font-size: 15px">
             arrow_forward
@@ -544,6 +571,74 @@ volunteer_activism
           </div>
           </div>
         <!-- LATEST POST end -->
+         <!-- footer start -->
+            <footer class="lg:h-[80vh] h-fit mt-48  w-full scroll-animate bg-[url(../poblic/img/images.png)] bg-cover">
+      <div class="h-full w-full scroll-animates bg-bgcon flex lg:flex-row flex-col justify-between py-8">
+        <div class="h-[70%] lg:w-[45%] w-full flex flex-col px-10 py-28 border-r ">
+          <img src="../poblic/img/logo.svg" class="h-20" alt="">
+          <div class="flex justify-between  gap-6">
+            <div class="flex flex-col gap-4 my-6">
+              <p class="text-xl">To free cart costomize care</p>
+              <h1 class="font-bold text-2xl">+93795064649</h1>
+            </div>
+            <div class="flex flex-col gap-4 my-6">
+              <p class="text-xl">To free cart costomize care</p>
+              <h1 class="font-bold text-2xl">nazisharifi@gmail.com</h1>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 ">
+            <h1 class="font-extrabold text-2xl">دنبال کردن</h1>
+            <div class="flex space-x-3">
+              <img src="../poblic/img/Screenshot 2025-06-09 110928.png" class="rounded-full h-10 w-10" alt="">
+
+              <img src="../poblic/img/Screenshot 2025-06-09 110936.png" class="rounded-full h-10 w-10" alt="">
+              <img src="../poblic/img/Screenshot 2025-06-09 110943.png" class="rounded-full h-10 w-10" alt="">
+              <img src="../poblic/img/Screenshot 2025-06-09 110951.png" class="rounded-full h-10 w-10" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="h-[90%] w-[45%] flex items-center my-24 flex-col mx-auto gap-4">
+          <div class="flex w-full gap-2 justify-center items-center" dir="rtl">
+            <input type="text" class="w-[80%] rounded-full border outline-0 py-3" placeholder="لطفا ایمیل تان را بنویسید" dir="rtl">
+            <button class="bg-amber-600 p-4 rounded-full">
+              <span class="material-symbols-outlined">
+send
+</span>
+            </button>
+          </div>
+          <div class="w-full flex space-x-3 justify-between items-center " dir="rtl">
+            <ul class="flex flex-col gap-1.5 font-bold text-xl">
+              <li class="font-bold text-2xl my-8">لینک سریع</li>
+              <li>خانه</li>
+              <li>درباره ما</li>
+              <li>خدمات</li>
+              <li>وبلاگ</li>
+
+            </ul>
+            <ul class="flex flex-col gap-1.5 font-bold text-xl">
+              <li class="font-bold text-2xl my-8">لینک سریع</li>
+              <li>خانه</li>
+              <li>درباره ما</li>
+              <li>خدمات</li>
+              <li>وبلاگ</li>
+
+            </ul>
+            <ul class="flex flex-col gap-1.5 font-bold text-xl">
+              <li class="font-bold text-2xl my-8">لینک سریع</li>
+              <li>خانه</li>
+              <li>درباره ما</li>
+              <li>خدمات</li>
+              <li>وبلاگ</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-20 flex justify-center lg:bg-bgfi bg-bgcon  items-center text-2xl font-bold">
+        <h1>Copyright © 2025 All Rights Reserved.</h1>
+      </div>
+    </footer>
+         <!-- footer end -->
       <!-- mod strt -->
      <button id="mode" class="bg-amber-100 p-4 rounded-md rounded-r-none  top-24 right-0 text-greenC fixed">
       <span   class="material-symbols-outlined" style="font-size: 35px;" >

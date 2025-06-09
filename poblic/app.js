@@ -11,7 +11,18 @@ const serves1 = document.getElementById("serves1");
 const serves2 = document.getElementById("serves2");
 const serves3 = document.getElementById("serves3");
 const nave = document.getElementById("nave");
+const menu = document.getElementById("menu");
+const close = document.getElementById("close");
+const navbar = document.getElementById("navbar");
 // const dark = document.querySelector("button.bg-amber-100");
+menu.addEventListener("click", () => {
+  navbar.classList.remove("-left-[100%]");
+  navbar.classList.add("left-0");
+});
+close.addEventListener("click", () => {
+  navbar.classList.add("-left-[100%]");
+  navbar.classList.remove("left-0");
+});
 mode.addEventListener("click", () => {
   const divs = document.querySelectorAll(".change");
   if (body.classList.contains("bg-greenC")) {
@@ -63,6 +74,10 @@ mode.addEventListener("click", () => {
       item.classList.add("bg-greenC");
       item.classList.remove("text-greenC");
       item.classList.add("text-amber-100");
+      if (item.classList.contains("text-greenC")) {
+        item.classList.remove("text-greenC");
+        item.classList.add("text-amber-100");
+      }
     });
   } else {
     body.classList.add("bg-greenC");
