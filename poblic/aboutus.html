@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>💁 About Us</title>
     <link rel="stylesheet" href="../src/output.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -29,10 +29,43 @@
     id="body"
   >
     <!-- navar start -->
+    <!-- nav md start -->
     <div
       id="nav"
-      class="h-20 lite bg-greenC font-bold flex shadow-md justify-evenly text-amber-100 list-none text-[19px] items-center"
+      class="h-16 lg:hidden lite bg-greenC z-50 font-bold absolute w-full flex pb-3 shadow-md justify-between text-amber-100 list-none text-[19px] items-end px-7"
     >
+      <div
+        id="nave"
+        class="bg-greenC shadow-md shadow-amber-100 flex py-24 justify-center rounded-b-2xl h-32 w-[120px]"
+      >
+        <div class="pt-12 px-2 rounded-b-2xl">
+          <img src="../poblic/img/logo.svg" alt="" />
+        </div>
+      </div>
+      <span
+        id="menu"
+        class="material-symbols-outlined p-2 rounded-2xl bg-amber-600"
+        style="font-size: 35px"
+      >
+        menu
+      </span>
+    </div>
+    <!-- nav md end -->
+    <div
+      id="navbar"
+      class="lg:h-20 h-screen lite bg-greenC z-50 overflow-y-hidden fixed -left-[100%] lg:left-0 font-bold w-full flex lg:flex-row flex-col shadow-md justify-evenly text-amber-100 list-none text-[19px] lg:items-center items-end px-7"
+    >
+      <button
+        class="w-full border-b md:block lg:hidden p-1 items-start flex md:justify-end"
+      >
+        <span
+          class="material-symbols-outlined p-2 rounded-2xl bg-amber-600 float-right"
+          id="close"
+          style="font-size: 35px"
+        >
+          close
+        </span>
+      </button>
       <li>
         <a href="#" class="hover:border-b-2 hover:border-amber-100">خانه</a>
       </li>
@@ -43,7 +76,7 @@
       </li>
       <div
         id="nave"
-        class="bg-greenC shadow-md shadow-amber-100 mt-5 flex justify-center items-center rounded-b-2xl h-32 w-[150px]"
+        class="bg-greenC hidden lg:block shadow-md shadow-amber-100 mt-5 flex justify-center items-center rounded-b-2xl h-32 w-[150px]"
       >
         <div class="py-8 px-2 rounded-b-2xl">
           <img src="../poblic/img/logo.svg" alt="" />
@@ -61,29 +94,33 @@
     <div
       dir="rtl"
       id="textType"
-      class="h-[60vh] w-full text-4xl font-bold flex justify-center items-center bg-[url(../poblic/img/causes-img-2.jpg)] bg-cover"
+      class="lg:h-[60vh] md:h-[80vh] h-[90vh] w-full text-4xl font-bold flex justify-center items-center bg-[url(../poblic/img/causes-img-2.jpg)] bg-cover"
     ></div>
     <!-- slider end  -->
-    <!-- about us start -->
-    <div class="h-screen w-full lite flex justify-between items-center py-7">
-      <div class="h-full w-[45%] relative p-12 scroll-animate">
+    <!-- about start -->
+    <div
+      class="lg:h-[130vh] my-12 w-full lite flex lg:flex-row flex-col justify-between items-center py-7"
+    >
+      <div
+        class="lg:h-full md:min-h-[130vh] min-h-[180vh] lg:w-[45%] md:w-[90%] w-full relative px-12 lg:py-36 py-12 scroll-animate"
+      >
         <img
           src="../poblic/img/about-img-1.jpg"
-          class="rounded-xl scroll-animate w-[80%] float-right"
+          class="rounded-xl scroll-animate lg:w-[400px] float-right"
           alt=""
         />
-        <div class="flex w-full h-1/2 absolute top-72">
+        <div class="flex w-full h-1/2 absolute lg:top-72 md:top-80 top-64">
           <img
             id="img"
             src="../poblic/img/about-img-2.jpg"
-            class="w-[250px] border-8 border-greenC scroll-animate h-[250px] rounded-xl"
+            class="lg:w-[250px] border-8 border-greenC scroll-animate lg:h-[250px] md:h-[230px] md:w-[230px] h-[180px] w-[180px] rounded-xl"
             alt=""
           />
           <div
             id="div1"
-            class="font-bold rounded-md mt-28 m-8 text-center flex flex-col outline-8 outline-greenC justify-center items-center h-[130px] w-[130px] bg-amber-100 text-greenC"
+            class="font-bold rounded-md mt-28 m-8 text-center flex flex-col outline-8 outline-greenC justify-center items-center lg:h-[130px] lg:w-[130px] md:h-[110px] md:w-[110px] h-[90px] w-[90px] py-3 bg-amber-100 text-greenC"
           >
-            <span class="material-symbols-outlined" style="font-size: 35px">
+            <span class="material-symbols-outlined" style="font-size: 30px">
               volunteer_activism
             </span>
             <h2 dir="rtl">۷۵ هزار دلار تأمین مالی شده توسط ما</h2>
@@ -93,7 +130,7 @@
       <!-- div1 end -->
       <div
         id="text"
-        class="w-[45%] h-full flex flex-col gap-4 scroll-animate py-12 text-amber-100"
+        class="lg:w-[45%] w-[90%] lg:h-full h-[150vh] flex flex-col gap-4 scroll-animate py-12 text-amber-100"
       >
         <div class="flex space-x-2">
           <span class="material-symbols-outlined text-amber-600">
@@ -131,9 +168,10 @@
               >
             </button>
           </div>
+          <!-- end -->
           <div
             id="div2"
-            class="bg-amber-100 h-[40vh] -z-0 pt-24 flex items-center flex-col justify-center relative rounded-md w-[220px]"
+            class="bg-amber-100 lg:h-[40vh] md:h-[60vh] h-[70vh] -z-0 pt-24 flex items-center flex-col justify-center relative rounded-md w-[220px]"
             style="
               clip-path: polygon(
                 0% 15%,
@@ -165,12 +203,104 @@
         </div>
       </div>
     </div>
-    <!-- about us end -->
+    <!-- about end -->
     <!-- footer start -->
-    <footer class="h-[80vh] w-full bg-[url(../poblic/img/images.png)] bg-cover">
-      <div class="h-full w-full bg-bgcon"></div>
+    <footer
+      class="lg:h-[80vh] h-fit mt-48 w-full scroll-animate bg-[url(../poblic/img/images.png)] bg-cover"
+    >
+      <div
+        class="h-full w-full scroll-animates bg-bgcon flex lg:flex-row flex-col justify-between py-8"
+      >
+        <div
+          class="h-[70%] lg:w-[45%] w-full flex flex-col px-10 py-28 lg:border-r border-r-0"
+        >
+          <img src="../poblic/img/logo.svg" class="h-20" alt="" />
+          <div class="flex justify-between gap-6">
+            <div class="flex flex-col gap-4 my-6">
+              <p class="text-xl">To free cart costomize care</p>
+              <h1 class="font-bold text-2xl">+93795064649</h1>
+            </div>
+            <div class="flex flex-col gap-4 my-6">
+              <p class="text-xl">To free cart costomize care</p>
+              <h1 class="font-bold text-2xl">nazisharifi@gmail.com</h1>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h1 class="font-extrabold text-2xl">دنبال کردن</h1>
+            <div class="flex space-x-3">
+              <img
+                src="../poblic/img/Screenshot 2025-06-09 110928.png"
+                class="rounded-full h-10 w-10"
+                alt=""
+              />
+
+              <img
+                src="../poblic/img/Screenshot 2025-06-09 110936.png"
+                class="rounded-full h-10 w-10"
+                alt=""
+              />
+              <img
+                src="../poblic/img/Screenshot 2025-06-09 110943.png"
+                class="rounded-full h-10 w-10"
+                alt=""
+              />
+              <img
+                src="../poblic/img/Screenshot 2025-06-09 110951.png"
+                class="rounded-full h-10 w-10"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="h-[90%] w-[45%] flex items-center my-24 flex-col mx-auto gap-4"
+        >
+          <div class="flex w-full gap-2 justify-center items-center" dir="rtl">
+            <input
+              type="text"
+              class="w-[80%] rounded-full border outline-0 py-3"
+              placeholder="لطفا ایمیل تان را بنویسید"
+              dir="rtl"
+            />
+            <button class="bg-amber-600 p-4 rounded-full">
+              <span class="material-symbols-outlined"> send </span>
+            </button>
+          </div>
+          <div
+            class="w-full flex space-x-3 justify-between items-center"
+            dir="rtl"
+          >
+            <ul class="flex flex-col gap-1.5 font-bold text-xl">
+              <li class="font-bold text-2xl my-8">لینک سریع</li>
+              <li>خانه</li>
+              <li>درباره ما</li>
+              <li>خدمات</li>
+              <li>وبلاگ</li>
+            </ul>
+            <ul class="flex flex-col gap-1.5 font-bold text-xl">
+              <li class="font-bold text-2xl my-8">لینک سریع</li>
+              <li>خانه</li>
+              <li>درباره ما</li>
+              <li>خدمات</li>
+              <li>وبلاگ</li>
+            </ul>
+            <ul class="flex flex-col gap-1.5 font-bold text-xl">
+              <li class="font-bold text-2xl my-8">لینک سریع</li>
+              <li>خانه</li>
+              <li>درباره ما</li>
+              <li>خدمات</li>
+              <li>وبلاگ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full h-20 flex justify-center lg:bg-bgfi bg-bgcon items-center text-2xl font-bold"
+      >
+        <h1>Copyright © 2025 All Rights Reserved.</h1>
+      </div>
     </footer>
-    <!-- footer ended -->
+    <!-- footer end -->
     <!-- mod strt -->
     <button
       id="mode"
