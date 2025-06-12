@@ -169,9 +169,17 @@ const clickMe = document.getElementById("clickMe");
 const hieght = document.getElementById("hieght");
 const Answers = document.getElementById("Answers");
 clickMe.addEventListener("click", () => {
-  hieght.classList.remove("h-14");
-  hieght.classList.add("h-40");
-  clickMe.classList.add("div-p");
-  clickMe.classList.add("text-greenC");
-  Answers.classList.remove("hidden");
+  if (hieght.classList.contains("h-14")) {
+    hieght.classList.remove("h-14");
+    hieght.classList.add("h-40");
+    clickMe.classList.add("div-p");
+    clickMe.classList.add("text-greenC");
+    Answers.classList.remove("hidden");
+  } else {
+    hieght.classList.add("h-14");
+    hieght.classList.remove("h-40");
+    clickMe.classList.remove("div-p");
+    clickMe.classList.remove("text-greenC");
+    Answers.classList.add("hidden");
+  }
 });
