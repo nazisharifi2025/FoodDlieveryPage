@@ -171,6 +171,9 @@ const Answers = document.getElementById("Answers");
 const clickMe2 = document.getElementById("clickMe2");
 const hieght2 = document.getElementById("hieght2");
 const Answers2 = document.getElementById("Answers2");
+const clickMe3 = document.getElementById("clickMe3");
+const hieght3 = document.getElementById("hieght3");
+const Answers3 = document.getElementById("Answers3");
 clickMe.addEventListener("click", () => {
   if (hieght.classList.contains("h-14")) {
     hieght.classList.remove("h-14");
@@ -178,11 +181,18 @@ clickMe.addEventListener("click", () => {
     clickMe.classList.add("div-p");
     clickMe.classList.add("text-greenC");
     Answers.classList.remove("hidden");
+    // clickme-2
     hieght2.classList.add("h-14");
     hieght2.classList.remove("h-40");
     clickMe2.classList.remove("div-p");
     clickMe2.classList.remove("text-greenC");
     Answers2.classList.add("hidden");
+    // clickme3
+    hieght3.classList.add("h-14");
+    hieght3.classList.remove("h-40");
+    clickMe3.classList.remove("div-p");
+    clickMe3.classList.remove("text-greenC");
+    Answers3.classList.add("hidden");
   } else {
     hieght.classList.add("h-14");
     hieght.classList.remove("h-40");
@@ -198,16 +208,50 @@ clickMe2.addEventListener("click", () => {
     clickMe2.classList.add("div-p");
     clickMe2.classList.add("text-greenC");
     Answers2.classList.remove("hidden");
+    // clickme1
     hieght.classList.add("h-14");
     hieght.classList.remove("h-40");
     clickMe.classList.remove("div-p");
     clickMe.classList.remove("text-greenC");
     Answers.classList.add("hidden");
+    // clickme 3
+    hieght3.classList.add("h-14");
+    hieght3.classList.remove("h-40");
+    clickMe3.classList.remove("div-p");
+    clickMe3.classList.remove("text-greenC");
+    Answers3.classList.add("hidden");
   } else {
     hieght2.classList.add("h-14");
     hieght2.classList.remove("h-40");
     clickMe2.classList.remove("div-p");
     clickMe2.classList.remove("text-greenC");
     Answers2.classList.add("hidden");
+  }
+});
+clickMe3.addEventListener("click", () => {
+  if (hieght3.classList.contains("h-14")) {
+    hieght3.classList.remove("h-14");
+    hieght3.classList.add("h-40");
+    clickMe3.classList.add("div-p");
+    clickMe3.classList.add("text-greenC");
+    Answers3.classList.remove("hidden");
+    // clickme1
+    hieght.classList.add("h-14");
+    hieght.classList.remove("h-40");
+    clickMe.classList.remove("div-p");
+    clickMe.classList.remove("text-greenC");
+    Answers.classList.add("hidden");
+    // clickme2
+    hieght2.classList.add("h-14");
+    hieght2.classList.remove("h-40");
+    clickMe2.classList.remove("div-p");
+    clickMe2.classList.remove("text-greenC");
+    Answers2.classList.add("hidden");
+  } else {
+    hieght3.classList.add("h-14");
+    hieght3.classList.remove("h-40");
+    clickMe3.classList.remove("div-p");
+    clickMe3.classList.remove("text-greenC");
+    Answers3.classList.add("hidden");
   }
 });
