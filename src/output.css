@@ -1351,6 +1351,11 @@
       height: 90vh;
     }
   }
+  .lg\:h-\[100vh\] {
+    @media (width >= 64rem) {
+      height: 100vh;
+    }
+  }
   .lg\:h-\[120px\] {
     @media (width >= 64rem) {
       height: 120px;
