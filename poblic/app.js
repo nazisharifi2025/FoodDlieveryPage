@@ -205,6 +205,12 @@ clickMe.addEventListener("click", () => {
     clickMe4.classList.remove("div-p");
     clickMe4.classList.remove("text-greenC");
     Answers4.classList.add("hidden");
+    // clickme5
+    hieght5.classList.add("h-14");
+    hieght5.classList.remove("h-40");
+    clickMe5.classList.remove("div-p");
+    clickMe5.classList.remove("text-greenC");
+    Answers5.classList.add("hidden");
   } else {
     hieght.classList.add("h-14");
     hieght.classList.remove("h-40");
@@ -238,6 +244,12 @@ clickMe2.addEventListener("click", () => {
     clickMe4.classList.remove("div-p");
     clickMe4.classList.remove("text-greenC");
     Answers4.classList.add("hidden");
+    // clickme5
+    hieght5.classList.add("h-14");
+    hieght5.classList.remove("h-40");
+    clickMe5.classList.remove("div-p");
+    clickMe5.classList.remove("text-greenC");
+    Answers5.classList.add("hidden");
   } else {
     hieght2.classList.add("h-14");
     hieght2.classList.remove("h-40");
@@ -271,6 +283,12 @@ clickMe3.addEventListener("click", () => {
     clickMe4.classList.remove("div-p");
     clickMe4.classList.remove("text-greenC");
     Answers4.classList.add("hidden");
+    // clickme 5
+    hieght5.classList.add("h-14");
+    hieght5.classList.remove("h-40");
+    clickMe5.classList.remove("div-p");
+    clickMe5.classList.remove("text-greenC");
+    Answers5.classList.add("hidden");
   } else {
     hieght3.classList.add("h-14");
     hieght3.classList.remove("h-40");
@@ -304,6 +322,12 @@ clickMe4.addEventListener("click", () => {
     clickMe3.classList.remove("div-p");
     clickMe3.classList.remove("text-greenC");
     Answers3.classList.add("hidden");
+    // clickme5
+    hieght5.classList.add("h-14");
+    hieght5.classList.remove("h-40");
+    clickMe5.classList.remove("div-p");
+    clickMe5.classList.remove("text-greenC");
+    Answers5.classList.add("hidden");
   } else {
     hieght4.classList.add("h-14");
     hieght4.classList.remove("h-40");
@@ -312,6 +336,7 @@ clickMe4.addEventListener("click", () => {
     Answers4.classList.add("hidden");
   }
 });
+// clickme5
 clickMe5.addEventListener("click", () => {
   if (hieght5.classList.contains("h-14")) {
     hieght5.classList.remove("h-14");
