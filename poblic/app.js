@@ -362,6 +362,12 @@ clickMe5.addEventListener("click", () => {
     clickMe3.classList.remove("div-p");
     clickMe3.classList.remove("text-greenC");
     Answers3.classList.add("hidden");
+    // clickme4
+    hieght4.classList.add("h-14");
+    hieght4.classList.remove("h-40");
+    clickMe4.classList.remove("div-p");
+    clickMe4.classList.remove("text-greenC");
+    Answers4.classList.add("hidden");
   } else {
     hieght5.classList.add("h-14");
     hieght5.classList.remove("h-40");
