@@ -174,6 +174,12 @@ const Answers2 = document.getElementById("Answers2");
 const clickMe3 = document.getElementById("clickMe3");
 const hieght3 = document.getElementById("hieght3");
 const Answers3 = document.getElementById("Answers3");
+const clickMe4 = document.getElementById("clickMe4");
+const hieght4 = document.getElementById("hieght4");
+const Answers4 = document.getElementById("Answers4");
+const clickMe5 = document.getElementById("clickMe5");
+const hieght5 = document.getElementById("hieght5");
+const Answers5 = document.getElementById("Answers5");
 clickMe.addEventListener("click", () => {
   if (hieght.classList.contains("h-14")) {
     hieght.classList.remove("h-14");
@@ -220,6 +226,12 @@ clickMe2.addEventListener("click", () => {
     clickMe3.classList.remove("div-p");
     clickMe3.classList.remove("text-greenC");
     Answers3.classList.add("hidden");
+    // clickme4
+    hieght4.classList.add("h-14");
+    hieght4.classList.remove("h-40");
+    clickMe4.classList.remove("div-p");
+    clickMe4.classList.remove("text-greenC");
+    Answers4.classList.add("hidden");
   } else {
     hieght2.classList.add("h-14");
     hieght2.classList.remove("h-40");
@@ -247,11 +259,50 @@ clickMe3.addEventListener("click", () => {
     clickMe2.classList.remove("div-p");
     clickMe2.classList.remove("text-greenC");
     Answers2.classList.add("hidden");
+    // clickme4
+    hieght4.classList.add("h-14");
+    hieght4.classList.remove("h-40");
+    clickMe4.classList.remove("div-p");
+    clickMe4.classList.remove("text-greenC");
+    Answers4.classList.add("hidden");
   } else {
     hieght3.classList.add("h-14");
     hieght3.classList.remove("h-40");
     clickMe3.classList.remove("div-p");
     clickMe3.classList.remove("text-greenC");
     Answers3.classList.add("hidden");
+  }
+});
+clickMe3.addEventListener("click", () => {
+  if (hieght4.classList.contains("h-14")) {
+    hieght4.classList.remove("h-14");
+    hieght4.classList.add("h-40");
+    clickMe4.classList.add("div-p");
+    clickMe4.classList.add("text-greenC");
+    Answers4.classList.remove("hidden");
+    // clickme1
+    hieght.classList.add("h-14");
+    hieght.classList.remove("h-40");
+    clickMe.classList.remove("div-p");
+    clickMe.classList.remove("text-greenC");
+    Answers.classList.add("hidden");
+    // clickme2
+    hieght2.classList.add("h-14");
+    hieght2.classList.remove("h-40");
+    clickMe2.classList.remove("div-p");
+    clickMe2.classList.remove("text-greenC");
+    Answers2.classList.add("hidden");
+    // clickme3
+    hieght3.classList.add("h-14");
+    hieght3.classList.remove("h-40");
+    clickMe3.classList.remove("div-p");
+    clickMe3.classList.remove("text-greenC");
+    Answers3.classList.add("hidden");
+  } else {
+    hieght4.classList.add("h-14");
+    hieght4.classList.remove("h-40");
+    clickMe4.classList.remove("div-p");
+    clickMe4.classList.remove("text-greenC");
+    Answers4.classList.add("hidden");
   }
 });
