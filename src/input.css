@@ -36,4 +36,7 @@
     opacity: 1;
     transform: translateY(0);
   }
+  .div-p {
+    @apply bg-amber-100 rounded-xl rounded-b-none;
+  }
 }

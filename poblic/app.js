@@ -165,3 +165,4 @@ setInterval(() => {
     h1.textContent = "";
   }
 }, 200);
+const clickMe = document.getElementById("clickMe");

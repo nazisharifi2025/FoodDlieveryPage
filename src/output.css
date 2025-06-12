@@ -9,10 +9,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-100: oklch(96.2% 0.059 95.617);
-    --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-amber-700: oklch(55.5% 0.163 48.998);
-    --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-emerald-900: oklch(37.8% 0.077 168.94);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-500: oklch(55.1% 0.027 264.364);
@@ -33,10 +31,6 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
-    --text-7xl: 4.5rem;
-    --text-7xl--line-height: 1;
-    --text-8xl: 6rem;
-    --text-8xl--line-height: 1;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --radius-xs: 0.125rem;
@@ -344,9 +338,6 @@
   .table {
     display: table;
   }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
   .h-1\/2 {
     height: calc(1/2 * 100%);
   }
@@ -365,14 +356,8 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
-  .h-24 {
-    height: calc(var(--spacing) * 24);
-  }
   .h-32 {
     height: calc(var(--spacing) * 32);
-  }
-  .h-40 {
-    height: calc(var(--spacing) * 40);
   }
   .h-\[40vh\] {
     height: 40vh;
@@ -446,9 +431,6 @@
   .h-\[200px\] {
     height: 200px;
   }
-  .h-\[200vh\] {
-    height: 200vh;
-  }
   .h-\[230px\] {
     height: 230px;
   }
@@ -467,9 +449,6 @@
   .h-\[300px\] {
     height: 300px;
   }
-  .h-\[300vh\] {
-    height: 300vh;
-  }
   .h-\[320px\] {
     height: 320px;
   }
@@ -479,26 +458,11 @@
   .h-\[340vh\] {
     height: 340vh;
   }
-  .h-\[350vh\] {
-    height: 350vh;
-  }
-  .h-\[390vh\] {
-    height: 390vh;
-  }
-  .h-\[410vh\] {
-    height: 410vh;
-  }
   .h-\[430vh\] {
     height: 430vh;
   }
-  .h-\[500vh\] {
-    height: 500vh;
-  }
   .h-\[530vh\] {
     height: 530vh;
-  }
-  .h-\[550vh\] {
-    height: 550vh;
   }
   .h-fit {
     height: fit-content;
@@ -520,9 +484,6 @@
   }
   .min-h-\[180vh\] {
     min-height: 180vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -602,20 +563,11 @@
   .min-w-full {
     min-width: 100%;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink {
     flex-shrink: 1;
   }
-  .flex-grow {
-    flex-grow: 1;
-  }
   .grow {
     flex-grow: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .rotate-90 {
     rotate: 90deg;
@@ -683,9 +635,6 @@
   .justify-evenly {
     justify-content: space-evenly;
   }
-  .gap-1 {
-    gap: calc(var(--spacing) * 1);
-  }
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
   }
@@ -715,13 +664,6 @@
   }
   .gap-28 {
     gap: calc(var(--spacing) * 28);
-  }
-  .space-x-1 {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(calc(var(--spacing) * 1) * var(--tw-space-x-reverse));
-      margin-inline-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-x-reverse)));
-    }
   }
   .space-x-1\.5 {
     :where(& > :not(:last-child)) {
@@ -769,14 +711,8 @@
   .rounded-md {
     border-radius: var(--radius-md);
   }
-  .rounded-sm {
-    border-radius: var(--radius-sm);
-  }
   .rounded-xl {
     border-radius: var(--radius-xl);
-  }
-  .rounded-xs {
-    border-radius: var(--radius-xs);
   }
   .rounded-r-none {
     border-top-right-radius: 0;
@@ -874,9 +810,6 @@
   }
   .p-7 {
     padding: calc(var(--spacing) * 7);
-  }
-  .p-8 {
-    padding: calc(var(--spacing) * 8);
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
@@ -1213,11 +1146,6 @@
       height: 190vh;
     }
   }
-  .md\:h-\[200vh\] {
-    @media (width >= 48rem) {
-      height: 200vh;
-    }
-  }
   .md\:h-\[230px\] {
     @media (width >= 48rem) {
       height: 230px;
@@ -1306,11 +1234,6 @@
   .md\:justify-end {
     @media (width >= 48rem) {
       justify-content: flex-end;
-    }
-  }
-  .md\:gap-0 {
-    @media (width >= 48rem) {
-      gap: calc(var(--spacing) * 0);
     }
   }
   .md\:gap-4 {
@@ -1619,6 +1542,12 @@
   .animate-fade-up-show {
     opacity: 1;
     transform: translateY(0);
+  }
+  .div-p {
+    border-radius: var(--radius-xl);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: var(--color-amber-100);
   }
 }
 @property --tw-rotate-x {
