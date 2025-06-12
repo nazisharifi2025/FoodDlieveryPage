@@ -166,3 +166,12 @@ setInterval(() => {
   }
 }, 200);
 const clickMe = document.getElementById("clickMe");
+const hieght = document.getElementById("hieght");
+const Answers = document.getElementById("Answers");
+clickMe.addEventListener("click", () => {
+  hieght.classList.remove("h-14");
+  hieght.classList.add("h-40");
+  clickMe.classList.add("div-p");
+  clickMe.classList.add("text-greenC");
+  Answers.classList.remove("hidden");
+});
