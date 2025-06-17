@@ -17,7 +17,9 @@
       const body = document.getElementById("body");
       const click = document.getElementById("click");
       click.addEventListener("click", () => {
-        if(body.classList.contains("bg-white"))
+        if (body.classList.contains("bg-white")) {
+          body.classList.add("bg-black");
+        }
       });
     </script>
   </body>
