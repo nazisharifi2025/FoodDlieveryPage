@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💁 blog</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <style>
+      .scroll-animate {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+      }
+
+      .animate-fade-up-show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+    <script src="app.js" defer></script>
+  </head>
+  <!-- https://demo.awaikenthemes.com/lenity/ -->
+  <body
+    class="font-kalam h-screen w-full text-amber-100 relative overflow-y-scroll bg-greenC"
+    id="body"
+  >
+    <!-- navar start -->
+    <!-- nav md start -->
+    <div
+      id="nav"
+      class="h-16 lg:hidden lite bg-greenC z-50 font-bold absolute w-full flex pb-3 shadow-md justify-between text-amber-100 list-none text-[19px] items-end px-7"
+    >
+      <div
+        id="nave"
+        class="bg-greenC shadow-md shadow-amber-100 flex py-24 justify-center rounded-b-2xl h-32 w-[120px]"
+      >
+        <div class="pt-12 px-2 rounded-b-2xl">
+          <img src="../poblic/img/logo.svg" alt="" />
+        </div>
+      </div>
+      <span
+        id="menu"
+        class="material-symbols-outlined p-2 rounded-2xl bg-amber-600"
+        style="font-size: 35px"
+      >
+        menu
+      </span>
+    </div>
+    <!-- nav md end -->
+    <div
+      id="navbar"
+      class="lg:h-20 h-screen lite bg-greenC z-50 overflow-y-hidden fixed -left-[100%] lg:left-0 font-bold w-full flex lg:flex-row flex-col shadow-md justify-evenly text-amber-100 list-none text-[19px] lg:items-center md:items-end items-start px-7"
+    >
+      <button
+        class="w-full border-b md:block lg:hidden p-1 items-start flex md:justify-end"
+      >
+        <span
+          class="material-symbols-outlined p-2 rounded-2xl bg-amber-600 float-right"
+          id="close"
+          style="font-size: 35px"
+        >
+          close
+        </span>
+      </button>
+      <li>
+        <a href="Home2.html" class="hover:border-b-2 hover:border-amber-100"
+          >خانه</a
+        >
+      </li>
+      <li>
+        <a href="aboutus.html" class="hover:border-b-2 hover:border-amber-100"
+          >درباره ما</a
+        >
+      </li>
+      <div
+        id="nave"
+        class="bg-greenC hidden lg:block shadow-md shadow-amber-100 mt-5 flex justify-center items-center rounded-b-2xl h-32 w-[150px]"
+      >
+        <div class="py-8 px-2 rounded-b-2xl">
+          <img src="../poblic/img/logo.svg" alt="" />
+        </div>
+      </div>
+      <li>
+        <a href="serves.html" class="hover:border-b-2 hover:border-amber-100"
+          >خدمات</a
+        >
+      </li>
+      <li>
+        <a href="blog.html" class="hover:border-b-2 hover:border-amber-100"
+          >وبلاگ</a
+        >
+      </li>
+    </div>
+    <!-- nav ended -->
+    <!-- slider start -->
+    <div
+      dir="rtl"
+      id="textType"
+      class="lg:h-[60vh] md:h-[40vh] h-[40vh] w-full text-4xl font-bold flex justify-center items-center bg-[url(../poblic/img/slide-img.jpg)] bg-cover"
+    ></div>
+    <!-- slider end  -->
+    <!-- LATEST POST start -->
+    <div
+      dir="rtl"
+      class="lg:h-screen scroll-animate h-[220vh] my-36 w-full flex flex-col scroll-animate gap-3 justify-center items-center"
+    >
+      <div
+        class="w-full flex scroll-animate lg:gap-12 gap-24 justify-evenly lg:flex-wrap flex-wrap"
+      >
+        <div
+          class="lg:h-[65vh] scroll-animate md:h-[50vh] h-[55vh] w-[340px] items-center scroll-animate change text-greenC rounded-3xl border bg-amber-100 shadow-md shadow-amber-100 flex flex-col gap-4 justify-center p-5"
+        >
+          <p class="text-amber-700 font-bold text-xl">January 8, 2025</p>
+          <p class="font-bold text-2xl">
+            برنامه رهبری جوانان الهام‌بخش نسل آینده است
+          </p>
+          <img
+            src="../poblic/img/post-img-1.jpg"
+            class="w-[90%] rounded-3xl"
+            alt=""
+          />
+          <button class="">
+            بیشتر بدانید
+            <span
+              class="material-symbols-outlined bg-amber-600 rounded-full p-2"
+              style="font-size: 15px"
+            >
+              arrow_forward
+            </span>
+          </button>
+        </div>
+        <div
+          class="lg:h-[65vh] scroll-animate md:h-[50vh] h-[55vh] w-[340px] items-center scroll-animate change text-greenC rounded-3xl border bg-amber-100 shadow-md shadow-amber-100 flex flex-col gap-4 justify-center p-5"
+        >
+          <p class="text-amber-700 font-bold text-xl">January 8, 2025</p>
+          <p class="font-bold text-2xl">
+            برنامه رهبری جوانان الهام‌بخش نسل آینده است
+          </p>
+          <img
+            src="../poblic/img/post-img-2.jpg"
+            class="w-[90%] rounded-3xl"
+            alt=""
+          />
+          <button class="">
+            بیشتر بدانید
+            <span
+              class="material-symbols-outlined bg-amber-600 rounded-full p-2"
+              style="font-size: 15px"
+            >
+              arrow_forward
+            </span>
+          </button>
+        </div>
+        <div
+          class="lg:h-[65vh] scroll-animate md:h-[50vh] h-[55vh] w-[340px] items-center scroll-animate change text-greenC rounded-3xl border bg-amber-100 shadow-md shadow-amber-100 flex flex-col gap-4 justify-center p-5"
+        >
+          <p class="text-amber-700 font-bold text-xl">January 8, 2025</p>
+          <p class="font-bold text-2xl">
+            برنامه رهبری جوانان الهام‌بخش نسل آینده است
+          </p>
+          <img
+            src="../poblic/img/post-img-3.jpg"
+            class="w-[90%] rounded-3xl"
+            alt=""
+          />
+          <button class="">
+            بیشتر بدانید
+            <span
+              class="material-symbols-outlined bg-amber-600 rounded-full p-2"
+              style="font-size: 15px"
+            >
+              arrow_forward
+            </span>
+          </button>
+        </div>
+        <div
+          class="lg:h-[65vh] scroll-animate md:h-[50vh] h-[55vh] w-[340px] items-center scroll-animate change text-greenC rounded-3xl border bg-amber-100 shadow-md shadow-amber-100 flex flex-col gap-4 justify-center p-5"
+        >
+          <p class="text-amber-700 font-bold text-xl">January 8, 2025</p>
+          <p class="font-bold text-2xl">
+            حمایت‌گری در عمل: ایجاد تغییرات سیاستی به‌سود جامعه
+          </p>
+          <img
+            src="../poblic/img/post-img-4-1024x576.jpg"
+            class="w-[90%] rounded-3xl"
+            alt=""
+          />
+          <button class="">
+            بیشتر بدانید
+            <span
+              class="material-symbols-outlined bg-amber-600 rounded-full p-2"
+              style="font-size: 15px"
+            >
+              arrow_forward
+            </span>
+          </button>
+        </div>
+        <div
+          class="lg:h-[65vh] scroll-animate md:h-[50vh] h-[55vh] w-[340px] items-center scroll-animate change text-greenC rounded-3xl border bg-amber-100 shadow-md shadow-amber-100 flex flex-col gap-4 justify-center p-5"
+        >
+          <p class="text-amber-700 font-bold text-xl">January 8, 2025</p>
+          <p class="font-bold text-2xl">
+            چگونه آموزش زندگی‌ها و آینده‌ها را متحول می‌سازد
+          </p>
+          <img
+            src="../poblic/img/post-img-5-1024x576.jpg"
+            class="w-[90%] rounded-3xl"
+            alt=""
+          />
+          <button class="">
+            بیشتر بدانید
+            <span
+              class="material-symbols-outlined bg-amber-600 rounded-full p-2"
+              style="font-size: 15px"
+            >
+              arrow_forward
+            </span>
+          </button>
+        </div>
+        <div
+          class="lg:h-[65vh] scroll-animate md:h-[50vh] h-[55vh] w-[340px] items-center scroll-animate change text-greenC rounded-3xl border bg-amber-100 shadow-md shadow-amber-100 flex flex-col gap-4 justify-center p-5"
+        >
+          <p class="text-amber-700 font-bold text-xl">January 8, 2025</p>
+          <p class="font-bold text-2xl">اهمیت دسترسی همگانی به خدمات درمانی</p>
+          <img
+            src="../poblic/img/post-img-6-1024x576.jpg"
+            class="w-[90%] rounded-3xl"
+            alt=""
+          />
+          <button class="">
+            بیشتر بدانید
+            <span
+              class="material-symbols-outlined bg-amber-600 rounded-full p-2"
+              style="font-size: 15px"
+            >
+              arrow_forward
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- LATEST POST end -->
+
+    <!-- footer start -->
+    <footer
+      class="lg:h-[80vh] h-fit mt-48 w-full scroll-animate bg-[url(../poblic/img/images.png)] bg-cover"
+    >
+      <div
+        class="h-full w-full scroll-animates bg-bgcon flex lg:flex-row flex-col justify-between py-8"
+      >
+        <div
+          class="h-[70%] lg:w-[45%] w-full flex flex-col px-10 py-28 border-r"
+        >
+          <img src="../poblic/img/logo.svg" class="h-20" alt="" />
+          <div
+            class="flex lg:flex-row md:flex-row flex-col justify-between gap-6"
+          >
+            <div class="flex flex-col gap-4 my-6">
+              <p class="text-xl">To free cart costomize care</p>
+              <h1 class="font-bold text-2xl">+93795064649</h1>
+            </div>
+            <div class="flex flex-col gap-4 my-6">
+              <p class="text-xl">To free cart costomize care</p>
+              <h1 class="font-bold text-2xl">nazisharifi@gmail.com</h1>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h1 class="font-extrabold text-2xl">دنبال کردن</h1>
+            <div class="flex space-x-3">
+              <img
+                src="../poblic/img/Screenshot 2025-06-09 110928.png"
+                class="rounded-full h-10 w-10"
+                alt=""
+              />
+
+              <img
+                src="../poblic/img/Screenshot 2025-06-09 110936.png"
+                class="rounded-full h-10 w-10"
+                alt=""
+              />
+              <img
+                src="../poblic/img/Screenshot 2025-06-09 110943.png"
+                class="rounded-full h-10 w-10"
+                alt=""
+              />
+              <img
+                src="../poblic/img/Screenshot 2025-06-09 110951.png"
+                class="rounded-full h-10 w-10"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="h-[90%] w-[45%] flex items-center my-24 flex-col mx-auto gap-4"
+        >
+          <div class="flex w-full gap-2 justify-center items-center" dir="rtl">
+            <input
+              type="text"
+              class="w-[80%] rounded-full border outline-0 py-3"
+              placeholder="لطفا ایمیل تان را بنویسید"
+              dir="rtl"
+            />
+            <button class="bg-amber-600 p-4 rounded-full">
+              <span class="material-symbols-outlined"> send </span>
+            </button>
+          </div>
+          <div
+            class="w-full flex space-x-3 justify-between items-center"
+            dir="rtl"
+          >
+            <ul class="flex flex-col gap-1.5 font-bold text-xl">
+              <li class="font-bold text-2xl my-8">لینک سریع</li>
+              <li>خانه</li>
+              <li>درباره ما</li>
+              <li>خدمات</li>
+              <li>وبلاگ</li>
+            </ul>
+            <ul class="flex flex-col gap-1.5 font-bold text-xl">
+              <li class="font-bold text-2xl my-8">لینک سریع</li>
+              <li>خانه</li>
+              <li>درباره ما</li>
+              <li>خدمات</li>
+              <li>وبلاگ</li>
+            </ul>
+            <ul class="flex flex-col gap-1.5 font-bold text-xl">
+              <li class="font-bold text-2xl my-8">لینک سریع</li>
+              <li>خانه</li>
+              <li>درباره ما</li>
+              <li>خدمات</li>
+              <li>وبلاگ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full h-20 flex justify-center lg:bg-bgfi bg-bgcon items-center text-2xl font-bold"
+      >
+        <h1>Copyright © 2025 All Rights Reserved.</h1>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- mod strt -->
+    <button
+      id="mode"
+      class="bg-amber-100 p-2 rounded-md rounded-r-none top-24 right-0 text-greenC fixed"
+    >
+      <span class="material-symbols-outlined"> contrast </span>
+    </button>
+    <!-- mod end -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const counters = document.querySelectorAll(".count");
+
+        function countUp(el, target) {
+          let current = 0;
+          const increment = target / 100;
+
+          const updateCount = () => {
+            current += increment;
+            if (current < target) {
+              el.textContent = Math.ceil(current);
+              requestAnimationFrame(updateCount);
+            } else {
+              el.textContent = target;
+            }
+          };
+
+          updateCount();
+        }
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const el = entry.target;
+                const target = +el.getAttribute("data-target");
+                countUp(el, target);
+                observer.unobserve(el);
+              }
+            });
+          },
+          {
+            threshold: 0.6,
+          }
+        );
+
+        counters.forEach((counter) => observer.observe(counter));
+      });
+    </script>
+  </body>
+</html>
